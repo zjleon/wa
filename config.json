@@ -1,0 +1,70 @@
+{
+  "name": "webAnalytic",
+  "description": "tracking",
+  "version": "0.1.0",
+  "author": {
+    "name": "zj"
+  },
+  "path":{
+  	"jsRoot" : "jsSource",
+  	"modules" : "jsSource/amdModules",
+  	"lib" : "jsSource/lib",
+  	"plugins" : "jsSource/plugins",
+  	"unitTest" : "unitTest",
+  	"testSpec" : "unitTest/spec",
+  	"tmpDir" : "tmp",
+  	"finalDir" : "dist"
+  },
+  "file":{
+  	"jsHintCfg":"jsHint.json",
+  	"gruntCfg":"Gruntfile.js",
+  	"requireCfg":"main.js",
+  	"almond":"almond.js",
+  	"errorhandling":"errorhandling.js",
+  	"promise":"pormise.js",
+  	"exclude":"exclude.json",
+  	"closureHead":"concat_head.frg",
+  	"closureFoot":"concat_foot.frg",
+  	"amdBuilded":"amdBuilded.js",
+  	"serverTemplate":"cfg.js",
+  	"finalName":"wa.js",
+  	"testRequireList":"list.json",
+  	"nullModule":"nullModule"
+  },
+  "servers":[
+  	{
+  		"name":"ITG.http",
+  		"enable":true,
+  		"protocol":"http",
+			"host":"c0007294.itcs.hp.com",
+			"port":"8088",
+			"postSuffix":"MetricService.ashx",
+			"getSuffix":""
+  	}
+  ],
+  "cookies":{
+  	"trackID_cookieName": "_wa_trackID",
+		"trackID_expires": 0,
+		"trackID_sendName": "tracking-id",
+		
+		"machineID_cookieName": "_wa_machineID",
+		"machineID_expires": 1438560,
+		"machineID_sendName": "machine-id",
+		
+		"sessionID_cookieName": "_wa_sessionID",
+		"sessionID_expires": 20,
+		"sessionID_sendName": "session-id"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}
