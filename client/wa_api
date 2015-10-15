@@ -1,6 +1,0 @@
-push函数在被调用时要判断被push的数据的类型，如果是config, 应该调用config函数，如果是group函数应该调用分组函数，如果是flow应该调用flow的处理函数
-
-TODO:
-- 给每一个module写unit test
-- ajax出错重试
-- low:把ajax出错重试移动到队列里
