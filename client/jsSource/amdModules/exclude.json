@@ -1,0 +1,7 @@
+{
+	"mobile":[
+		"oldBrowser/xDomaimRequest",
+		"oldBrowser/JSON",
+		"oldBrowser/localStorage"
+	]
+}
