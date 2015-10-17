@@ -16,4 +16,5 @@ start node server:
 
 Build test server:
 	build bootstrap:
-		grunt dist
+		1.Goto testSte/boostrap
+		2.grunt dist
