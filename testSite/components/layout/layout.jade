@@ -1,0 +1,10 @@
+html
+	head
+		title #{page.title}
+		block styles
+	body
+		div(class='container-fluid')
+			include ../header/header.jade
+			block content
+			include ../footer/footer.jade
+		block scripts

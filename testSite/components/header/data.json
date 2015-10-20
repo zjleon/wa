@@ -1,0 +1,6 @@
+{
+	"page": {
+		"title":"my page from JSON",
+		"style1": "{{=v2}}"
+	}
+}

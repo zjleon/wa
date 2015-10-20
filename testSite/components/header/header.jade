@@ -1,5 +1,10 @@
-include ./fakeData.jade
-doctype html
-head
-  title #{page.title}
-  
+div(class='header')
+	h1(class='logo')
+		a(href='/home')
+			img(src='./logo.png')
+	div(class='nav')
+		ul
+			li
+				a(href='/home') home
+			li
+				a(href='/page1')	page1
