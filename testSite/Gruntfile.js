@@ -89,7 +89,9 @@ module.exports = function( grunt ) {
 
       },
       test: {
-        
+        files: {
+          
+        }
       }
     }
 
