@@ -1,0 +1,30 @@
+{{#def.header}}
+<div class="main col-sm-8 col-md-2">{{name}}</div>
+<div class="sub col-sm-4 col-md-10">
+    <select name="s1" id="s1" ng-model="select1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+</div>
+<div class="row">
+<div class="col-xs-9">.col-xs-9</div>
+<div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+<div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+<div class="col-xs-6">.col-xs-6</div>
+<div class="col-xs-6">.col-xs-6</div>
+</div>
+{{#def.footer}}

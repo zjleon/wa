@@ -81,16 +81,28 @@ module.exports = function( grunt ) {
         'tmplFiles': {
 
         }
+    },
+
+    // Build dot templates
+    dot: {
+      options: {
+
+      },
+      test: {
+        
+      }
     }
 
   } );
+
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
   grunt.loadNpmTasks( 'grunt-contrib-clean' );
   grunt.loadNpmTasks( 'grunt-contrib-copy' );
   grunt.loadNpmTasks( 'grunt-autoprefixer' );
+  grunt.loadNpmTasks( 'grunt-dot' );
 
-  // Default task(s).
+  // 
   grunt.registerTask( 'job1', [ 
     'clean:clear-before-sass-build', 
     'sass' ,
@@ -98,5 +110,7 @@ module.exports = function( grunt ) {
     'copy:sass-map-files',
     'clean:clear-after-prefix'
    ] );
-  grunt.registerTask( 'default', [ 'job1', 'watch' ] );
+  // Default task(s).
+  // grunt.registerTask( 'default', [ 'job1', 'watch' ] );
+  grunt.registerTask( 'default', [ 'job1' ] );
 };
