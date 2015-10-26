@@ -1,0 +1,29 @@
+{
+    "res": {
+        "lib/angular/angular.js": {
+            "uri": "/lib/angular/angular.js",
+            "type": "js"
+        },
+        "lib/angular/angular.min.js": {
+            "uri": "/lib/angular/angular.min.js",
+            "type": "js"
+        },
+        "lib/bootstrap/bootstrap.css": {
+            "uri": "/lib/bootstrap/bootstrap.css",
+            "type": "css"
+        },
+        "lib/bootstrap/bootstrap.min.css": {
+            "uri": "/lib/bootstrap/bootstrap.min.css",
+            "type": "css"
+        },
+        "pages/test/test.js": {
+            "uri": "/pages/test/test.js",
+            "type": "js"
+        },
+        "test.js": {
+            "uri": "/test.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

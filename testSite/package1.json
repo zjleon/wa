@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/fis-scaffold/default",
   "devDependencies": {
-    "fis-parser-jade": "https://github.com/ssddi456/fis-parser-jade",
-    "fis-parser-sass": "https://github.com/fouber/fis-parser-sass"
+    "grunt-autoprefixer": "https://github.com/nDmitry/grunt-autoprefixer",
+    "grunt-contrib-clean": "https://github.com/gruntjs/grunt-contrib-clean",
+    "grunt-contrib-copy": "https://github.com/gruntjs/grunt-contrib-copy",
+    "grunt-contrib-sass": "https://github.com/gruntjs/grunt-contrib-sass",
+    "grunt-contrib-watch": "https://github.com/gruntjs/grunt-contrib-watch",
+    "grunt-dot": "https://github.com/pspeter3/grunt-dot"
   }
 }
