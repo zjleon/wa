@@ -2,4 +2,6 @@
 *~
 node_modules/
 /client/tmp/
-/testStie/outputs/*
+/testStie/outputs/
+/nodeServer/ITG/
+*.origin

@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/fis-scaffold/default",
   "devDependencies": {
-    "fis-parser-jade": "https://github.com/ssddi456/fis-parser-jade",
-    "fis-parser-sass": "https://github.com/fouber/fis-parser-sass"
+    "fis-parser-jade-to-html": "https://github.com/zjleon/fis3-parser-jade-to-html",
+    "fis-parser-node-sass": "https://github.com/fex-team/fis-parser-node-sass"
   }
 }

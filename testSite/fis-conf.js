@@ -27,9 +27,9 @@ fis.match( '*.js', {
 
 fis.match( '*.scss', {
     release: false,
-    parser: fis.plugin( 'sass' )
+    parser: fis.plugin( 'node-sass' )
 }).match( 'bootstrap4/**', {
-  release: false
+    release: false
 }).match( '*.css', {
     optimizer: fis.plugin( 'clean-css' )
 });
