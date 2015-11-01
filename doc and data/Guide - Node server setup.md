@@ -12,7 +12,10 @@ the code of backend of tracking should be deploy to node folder
 start node server:
 	nodemon index.js
 
-
+using taobao imagination
+	npm config set registry https://registry.npm.taobao.org
+switch back
+	npm config set registry  https://registry.npmjs.org/
 
 Build test server:
 	build bootstrap:

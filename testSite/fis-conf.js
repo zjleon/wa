@@ -1,23 +1,24 @@
-// default settings. fis3 release
 var fs = require('fs');
 var headerVars = JSON.parse(fs.readFileSync('./components/header/data.json', 'utf8'));
 
-// Global start
-fis.match( '*.{js,css}', {
-  useHash: true
-} );
-
+// Image setting
 fis.match( '::image', {
   useHash: true
 } ).match( '*.png', {
   optimizer: fis.plugin( 'png-compressor' )
 });
 
+// config template plugin
 fis.match( '*.jade', {
   rExt: 'html'
-} );
+}).match('*.jsx', {
+  rExt: 'js',
+  parser: fis.plugin('react')
+});
 
+// JS file setting
 fis.match( '*.js', {
+  useHash: true,
   optimizer: fis.plugin( 'uglify-js' )
 }).match( 'node_modules/**', {
   release: false
@@ -25,18 +26,18 @@ fis.match( '*.js', {
   release: false
 });
 
+// CSS file setting
 fis.match( '*.scss', {
-    release: false,
+    // release: false,
+    rExt: 'css',
     parser: fis.plugin( 'node-sass' )
 }).match( 'bootstrap4/**', {
     release: false
 }).match( '*.css', {
+    useHash: true,
     optimizer: fis.plugin( 'clean-css' )
 });
 
-
-
-// Global end
 
 // default media is `dev`
 fis.media( 'dev' )
@@ -44,12 +45,12 @@ fis.media( 'dev' )
     useHash: false,
     optimizer: null
 }).match('test.jade', {
-	parser: fis.plugin('jade', {
+	parser: fis.plugin('jade-to-html', {
 		pretty: true,
 		data: headerVars
 	})
 }).match('*.png', {
-	release: '/image/$0'
+	// release: '/image/$0'
 });
 
 // extends GLOBAL config

@@ -22,6 +22,9 @@
   "homepage": "https://github.com/fis-scaffold/default",
   "devDependencies": {
     "fis-parser-jade-to-html": "https://github.com/zjleon/fis3-parser-jade-to-html",
-    "fis-parser-node-sass": "https://github.com/fex-team/fis-parser-node-sass"
+    "fis-parser-node-sass": "https://github.com/fex-team/fis-parser-node-sass",
+    "fis-parser-react": "https://github.com/fouber/fis-parser-react",
+    "react": ">=0.14.1",
+    "react-dom": ">=0.14.1"
   }
 }
