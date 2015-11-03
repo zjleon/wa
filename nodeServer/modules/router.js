@@ -8,15 +8,13 @@ var trackServer = express();
 // console.log(router_to_track_request);
 trackServer
 .use(router_to_track_request)
-// an handling function response to all requet in the end
-.use(error_handling)
+.use(error_handling) // an handling function response to all requet in the end
 .listen(8080);
 
 var staticServer = express();
-var staticPath = path.resolve(__dirname, '../ITG');
+var staticPath = path.resolve(__dirname, '../ITG'); // using full path instead of relative path
 staticServer
-// Set static resources, using full path instead of relative path
-.use('/', express.static(staticPath))
+.use('/', express.static(staticPath)) // Set static resources
 // Record all request sent to server
 .use(function(req, res, next){
 	console.log('request arrived, path: ' + req.path);
